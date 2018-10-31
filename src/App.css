@@ -1,32 +1,57 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App-header{
+  color: purple;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-card-panel {
+  background-color: rgb(255, 255, 255);
 }
 
-.App-link {
-  color: #61dafb;
+.picker__date-display {
+  background-color:purple;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+  background-color:purple;
+}
+
+.picker__weekday-display {
+  background-color: blueviolet;
+}
+
+.picker__cancel,
+.picker__today,
+.picker__close{
+  color: blueviolet;
+}
+
+.picker__day.picker__day--today {
+  color: rgb(208, 69, 255);
+  font-weight: 700;
+}
+
+.picker__clear {
+  color: rgb(188, 128, 244);
+}
+
+.tabs .tab a {
+  color: #78b51776;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #78b517;
+  font-weight: 700;
+}
+
+.tabs .indicator {
+  background-color: #5baa01;
+  height: 4px;
+}
+
+.homework-list-h6 {
+  color: rgb(140, 62, 250);
 }
